@@ -1,0 +1,896 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ATTACK ON TITAN
+	</title>
+	<link rel="icon" type="image/x-icon" href="../786128.jpg"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+	
+<style>
+	body{background-image: url("../attackkk.jpg");
+		background-color : rgba(255,255,255,0.26);
+		background-blend-mode: lighten;
+		margin: 0;
+		padding: 0;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+	
+	.A {font-family: "Hoefler Text", "Liberation Serif" "Times New Roman", "serif"; 
+		text-align: center; 
+		font-size: 400%;
+		box-shadow: 0px 6px 5px 5px rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+		color: orange;
+		text-shadow:
+    0px 0px 1px rgba(0,0,0,1),
+    -2px -2px 4px rgba(255,255,255,0.6),
+    0 1px 3px rgba(0,0,0,0.6),
+    0 -1px 2px rgba(255,255,255,0.3);
+
+		font-weight: 900;
+		letter-spacing:  1px;
+		text-transform: uppercase;
+		font-smoothing; antialiased;
+		 margin-top: 0px;
+		
+	} 
+		
+	
+	.C {
+  display: inline-block;
+  padding: 8px 18px;
+  font-size: 200%;
+  color: orange; 
+  background-color: rgba(0,0,0,0.8); 
+  border-radius: 6px;
+  box-shadow: inset 0px 1px 0 1px rgba(0,0,0,0.7),
+              inset 0 -4px 6px rgba(0,0,0,0.25),
+              0 3px 1px rgba(0,0,0,0.4);
+  text-shadow: 1px 1px 2px black; 
+		margin-left: 90px
+}
+
+.D {
+  display: block;
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 125%;
+  line-height: 1.5;
+  color: white; 
+  background-color: rgba(0,0,0,0.8); 
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+  font-family: "Cinzel", "Hoefler Text", "Liberation Serif", "Times New Roman", serif;
+}
+	
+
+.header-bar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+	margin-left: 90px
+}
+
+.login-icon i {
+  font-size: 28px;
+  color:orange;
+  cursor: pointer;
+}
+
+.search-1 {
+  display: flex;
+  align-items: center;
+  background: rgba(0,0,0,0.6);
+  border-radius: 10px;
+  padding: 10px 18px;
+	margin-right: 150px;
+	box-shadow: 0 0 20px rgba(0,0,0,1);
+}
+
+.search-1 input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+
+.search-1 input::placeholder {
+  color: rgba(253,163,0,1.00);
+}
+.top-bar {
+  width: 100%;
+  height: 100px; 
+  background-color: black; 
+}
+
+.vertical-line {
+  position: fixed;        
+  top: 0;               
+  left: 0;           
+  width: 80px;            
+  height: 100%;           
+  background-color: black; 
+  z-index: 1000;          
+}
+
+.character-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-color: rgba(0,0,0,0.75);
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 10px;
+  max-width: 1000px;
+  color: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+.character-image img {
+  width: 250px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.9);
+}
+
+.character-text {
+  flex: 1;
+  font-family: "Cinzel", "Times New Roman", serif;
+}
+
+.character-text h2 {
+  color: orange;
+  margin-bottom: 10px;
+  font-size: 1.8em;
+  text-shadow: 0 0 10px black;
+}
+
+.character-text p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+
+
+@media (max-width: 768px) {
+  .character-box {
+    flex-direction: column;
+    text-align: center;
+  }
+  .character-image img {
+    width: 200px;
+    height: auto;
+  }
+}
+	
+
+.characters-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap; 
+  margin: 50px auto;
+  max-width: 1200px;
+	
+}
+
+
+.info-box {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+	
+}
+
+.info-image img {
+  width: 220px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.9);
+}
+
+.info-text {
+  flex: 1;
+  padding-left: 20px;
+  font-family: "Cinzel", "Times New Roman", serif;
+}
+
+.info-text h2 {
+  color: orange;
+  margin-bottom: 10px;
+  font-size: 1.6em;
+}
+
+.info-text p {
+  font-size: 1.05em;
+  line-height: 1.6;
+}
+
+
+.card-box {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+.card-box img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card-box h3 {
+  color: orange;
+  margin-bottom: 8px;
+  font-size: 1.3em;
+}
+
+
+@media (max-width: 900px) {
+  .characters-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-box {
+    flex-direction: column;
+    text-align: center;
+  }
+  .info-text {
+    padding: 0;
+  }
+}
+		
+	.F {text-align: center;
+	font-size: 30px;
+  font-size: 200%;
+  color: orange; 
+  background-color: rgba(0,0,0,0.8); 
+  border-radius: 6px;
+  box-shadow: inset 0px 1px 0 1px rgba(0,0,0,0.7),
+              inset 0 -4px 6px rgba(0,0,0,0.25),
+              0 3px 1px rgba(0,0,0,0.4);
+  text-shadow: 1px 1px 2px black; }
+
+	
+.three-cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 60px auto;
+  max-width: 1100px;
+}
+
+
+.char-card {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.char-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+.char-card h4 {
+  color: orange;
+  margin-bottom: 8px;
+  font-size: 1.3em;
+}
+
+
+.char-card p {
+  font-size: 1em;
+  line-height: 1.5;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+}
+
+
+.char-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(255,140,0,0.5);
+}
+
+
+@media (max-width: 900px) {
+  .three-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+	
+.single-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 60px auto;
+  max-width: 1000px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.single-image img {
+  width: 300px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+
+.single-text {
+  flex: 1;
+  font-family: "Cinzel", "Times New Roman", serif;
+}
+
+.single-text h2 {
+  color: orange;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  text-shadow: 0 0 8px black;
+}
+
+.single-text p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+}
+
+
+.single-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 35px rgba(255,140,0,0.5);
+}
+
+
+@media (max-width: 768px) {
+  .single-box {
+    flex-direction: column;
+    text-align: center;
+  }
+  .single-image img {
+    width: 220px;
+    height: auto;
+  }
+}
+
+.characters-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 60px auto;
+  flex-wrap: wrap; 
+}
+
+
+.info-box {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(255,140,0,0.2);
+  width: 700px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 40px rgba(255,140,0,0.6);
+}
+
+.info-image img {
+  width: 260px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+
+.info-text {
+  color: white;
+  font-family: "Cinzel", serif;
+  text-shadow: 0 1px 3px black;
+}
+
+.info-text h2 {
+  color: orange;
+  margin-bottom: 10px;
+}
+
+
+.card-box {
+  width: 320px;
+  background: rgba(0,0,0,0.8);
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  font-family: "Cinzel", serif;
+  box-shadow: 0 0 25px rgba(255,140,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-box img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 40px rgba(255,140,0,0.6);
+}
+
+.card-box:hover img {
+  transform: scale(1.05);
+}
+
+.card-box h3 {
+  color: orange;
+  margin-top: 5px;
+}
+
+.card-box p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+	.table-title {
+  text-align: center;
+  color: orange;
+  font-size: 250%;
+  text-shadow: 0 0 10px rgba(255,140,0,0.7);
+  margin-top: 60px;
+  margin-bottom: 25px;
+  font-family: "Cinzel", serif;
+}
+
+.titan-table {
+  width: 90%;
+  margin: 0 auto 80px auto;
+  border-collapse: collapse;
+  background: rgba(0,0,0,0.8);
+  color: white;
+  font-family: "Cinzel", serif;
+  box-shadow: 0 0 25px rgba(255,140,0,0.3);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.titan-table th,
+.titan-table td {
+  padding: 15px 25px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,140,0,0.3);
+}
+
+.titan-table th {
+  background: rgba(255,140,0,0.2);
+  color: orange;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.titan-table tr:hover {
+  background: rgba(255,140,0,0.15);
+  transition: 0.3s ease;
+}
+
+.titan-table tr:last-child td {
+  border-bottom: none;
+}
+.titan-table {
+  margin: 60px auto;          
+  width: 80%;
+  border-collapse: collapse;
+  background-color: rgba(0,0,0,0.85);
+  color: white;
+  box-shadow: 0 0 15px rgba(255,255,255,0.15);
+  border-radius: 10px;
+  overflow: hidden;           
+}
+
+.titan-table th, .titan-table td {
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 14px;
+  text-align: center;
+}
+
+.titan-table th {
+  background-color: rgba(255,165,0,0.2);
+  color: orange;
+  font-size: 18px;
+}
+
+.titan-table tr:nth-child(even) {
+  background-color: rgba(255,255,255,0.05);
+}
+
+.titan-table tr:hover {
+  background-color: rgba(255,165,0,0.15);
+  transition: 0.3s;
+}
+
+	.footer {
+  background-color: #FF7F00; 
+  color: white;
+  padding: 30px 20px;       
+  display: flex;
+  flex-wrap: wrap;          
+  justify-content: space-between;
+  align-items: flex-start;  
+  min-height: 200px;        
+  gap: 20px;                
+  box-sizing: border-box;
+}
+
+.footer .links, .footer .apps {
+  display: flex;
+  flex-wrap: wrap;         
+  gap: 15px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer img {
+  width: 120px;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    min-height: auto;       
+  }
+}
+
+	@media (max-width: 500px) {
+  .A {
+    font-size: 250%; 
+  }
+
+  .C {
+    font-size: 150%;
+  }
+
+  .titan-table {
+    font-size: 12px; 
+    display: block;
+    overflow-x: auto; 
+    width: 100%;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  .search-1 input {
+    font-size: 14px;
+  }
+}
+
+	
+	</style>
+<link href="aot.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+	 <div class="vertical-line"></div>
+	
+  <div class="top-bar"></div>
+
+  <p class="A">ATTACK ON TITAN</p>
+
+
+	<div class="header-bar">
+  
+  <div class="login-icon">
+      <i class="fas fa-user"></i>
+  </div>
+
+  
+  <div class="search-1">
+    <input type="text" placeholder="search">
+  </div>
+</div>
+
+
+
+		
+		
+		
+		
+	<br>
+	
+	<p class="C">AOT SEASON 1:</p>
+	
+	<p class="D">In Attack on Titan season 1, humanity lives in fear of man-eating giants called Titans behind giant walls, a peace that is shattered when a Colossal Titan breaks through the outermost wall, Wall Maria. The protagonist,<a href="https://attackontitan.fandom.com/wiki/Eren_Yeager" target="_blank">Eren Yeager</a>, witnesses his mother being eaten and vows to kill every Titan. After joining the military with friends Mikasa Ackerman and Armin Arlert, Eren discovers he has the mysterious ability to transform into a Titan himself. The season follows their training and first battles, which culminate in Eren using his power to fight a mysterious Female Titan, Annie Leonhart, revealing that other human-transforming Titans exist and that the walls themselves may be hiding a shocking secret. </p>
+	
+	<p class="C">AOT SEASON 2:</p>
+	
+	<p class="D">starts with the 104th cadets joining the Survey Corps, facing a new Titan invasion, and discovering that some of their own are secretly Titan shifters, namely Reiner as the Armored Titan and Bertholdt as the Colossal Titan. The season also reveals secrets about the walls and humanity, introduces the intelligent Beast Titan, and ends with Eren discovering a new power called the Founding Titan after a confrontation with the Smiling Titan. </p>
+	
+	<p class="C">AOT SEASON 3:</p>
+	
+	<p class="D">the Survey Corps battling corrupt officials and the Military Police to protect Eren and Historia, who are central to the government's secrets. The season culminates in a major expedition to the Shiganshina District to reclaim Wall Maria, where the Survey Corps confronts the Armored and Beast Titans, leading to the discovery of the truth about their world hidden in Eren's father's basement. its part one <br> focuses on the Scout Regiment's final push to reclaim Shiganshina, the home district enclosed by the three walls, and uncover the secrets within Grisha's basement. The mission becomes a brutal battle against the Armored Titan (Reiner), the Beast Titan (Zeke), and a horde of pure Titans. Key events include the suicide charge led by Erwin, Levi's fight with the Beast Titan, and Armin's strategic use of the Colossal Titan's power after a near-fatal moment. The season culminates with the Scouts reaching Grisha's basement, revealing the true history of the world and the existence of nations outside the walls.   </p>
+	
+	<p class="C">AOT SEASON 4:</p>
+	
+	<p class="D">chronicles the devastating war between the Marleyan nation and the global coalition, which includes Paradis Island's forces, after a four-year timeskip. The season focuses on the dual perspectives of Marleyan "warrior" candidates like Gabi and Falco, and the Paradis "Scout" forces led by Eren, who initiates a global genocide, known as the Rumbling, to destroy all life outside the island. The season culminates with a desperate alliance, composed of former enemies from Paradis and Marley, banding together to stop Eren's apocalyptic plan. </p>
+	
+	
+<div class="character-box">
+  <div class="character-image">
+    <img src="../../../Downloads/d23ef673fc4ec07e8e9c565071e2f2af.jpg" alt="Eren Yeager">
+  </div>
+
+  <div class="character-text">
+    <h2>Eren Yeager</h2>
+    <p>
+      Eren Yeager is the main protagonist of Attack on Titan. After witnessing his mother’s death during the Titan invasion,
+      he swore revenge on all Titans. He later discovers his own power to transform into a Titan, making him both a weapon and
+      a mystery to humanity.
+    </p>
+  </div>
+</div>
+
+	
+<div class="character-box">
+  <div class="character-image">
+    <img src="../../../Downloads/Armin_Arlelt_29_character_image_29.webp" alt="Armin Alert">
+  </div>
+
+  <div class="character-text">
+    <h2>Armin Alert</h2>
+    <p>
+      Armin Arlert is a central character from the anime and manga series Attack on Titan, known for being the Colossal Titan and the commander of the Survey Corps. He is a childhood friend of Eren Yeager and Mikasa Ackerman, whose exceptional intelligence and strategic genius make him a vital asset despite his physical weakness. His journey is defined by his incredible growth from a timid boy to a capable leader who utilizes his strategic mind to save humanity. 
+    </p>
+  </div>
+</div>
+
+	
+<div class="character-box">
+  <div class="character-image">
+    <img src="../../../Downloads/mikasa-ackerman-short-haired-m5cgaysqztmwgsq6.jpg" alt="Mikasa Ackerman">
+  </div>
+
+  <div class="character-text">
+    <h2>Mikasa Ackerman</h2>
+    <p>
+     Mikasa Ackerman is a central character in Attack on Titan who is a highly skilled soldier driven by a deep need to protect her adoptive brother, Eren Yeager. After her parents were murdered, she was taken in by the Yeager family, which profoundly changed her once-cheerful personality into a more stoic and withdrawn one, particularly when Eren is not around. She is an unparalleled genius who graduated at the top of her class in the Training Corps and joined the Survey Corps to stay by Eren's side
+    </p>
+  </div>
+</div>
+	
+	<p class="F">Titans:</p>
+	
+	
+	
+<div class="characters-row">
+
+  <div class="info-box">
+    <div class="info-image">
+      <img src="../../../Downloads/ce6c86a518d6a988dbdd233526dce157.jpg" alt="Attack Titan">
+    </div>
+    <div class="info-text">
+      <h2>Attack Titan</h2>
+      <p>
+       The Attack Titan is a 15-meter tall, muscular humanoid with a lean build, though its exact appearance varies depending on the inheritor. Key features include a jagged, often lipless mouth with exposed teeth, elongated ears, and deep-set eyes. Its hair and other facial features change to reflect the human host's age and characteristics over time, and it has a unique ability to access memories of both past and future inheritors.  
+      </p>
+    </div>
+  </div>
+
+  
+  <div class="card-box">
+    <img src="../../../Downloads/thumb-1920-231244.png" alt="Beast Titan">
+    <h3>Beast Titan</h3>
+    <p>
+     Zeke Yeager is the inheritor of the Beast Titan and a former member of Marley's Warrior Unit. His Titan form is an ape-like 17-meter giant with a powerful throwing ability, which he uses as artillery. Due to his royal blood, he can also use his spinal fluid to turn other Eldians into Titans and control them with a scream. 
+    </p>
+  </div>
+
+</div>
+
+	<!-- ردیف جدید ۳ تا کارت -->
+<div class="three-cards">
+  <div class="char-card">
+    <img src="../../../Downloads/armored-titan-reiner-braun-attack-on-titan-featured.avif" alt="Armored Titan">
+    <h4>Armored Titan</h4>
+    <p>The Armored Titan is a 15-meter class Titan from Attack on Titan, known for its ability to generate hardened, plated armor over its body for extreme durability against most attacks. While this armor is capable of withstanding cannon fire and high-speed blades, it significantly reduces the Titan's speed. This limitation can be overcome by selectively shedding the armor, particularly from the joints, to increase mobility. The user, Reiner Braun, can also use the armor to create sharp claws for scaling walls, or to charge and deliver powerful, high-impact blows. </p>
+  </div>
+
+  <div class="char-card">
+    <img src="../../../Downloads/Female_Titan_29_character_image_29.webp" alt="Female Titan">
+    <h4>Female Titan</h4>
+    <p>The Female Titan from Attack on Titan is a 14-meter tall Titan with superhuman strength, speed, and endurance, known for its unique abilities: skin hardening and a screaming power that can attract other Titans. The only confirmed wielder is Annie Leonhart, a Marleyan warrior who uses her Titan for combat and to gather other Titans for a specific purpose. A unique capability of the Female Titan is its potential to mimic the abilities of other Titans by consuming parts of their bodies. </p>
+  </div>
+
+  <div class="char-card">
+    <img src="../../../Downloads/Colossal_Titan_29_character_image_29.webp" alt="Colossal Titan">
+    <h4>Colossal Titan</h4>
+    <p>The Colossal Titan is the largest of the Nine Titans from the anime and manga Attack on Titan, known for its skinless, muscular body, immense size (around 60 meters tall), and the ability to release destructive steam and heat during transformation. It serves as a primary antagonist, capable of breaking through the Walls and causing mass destruction, though it is slow and lacks agility. </p>
+  </div>
+</div>
+
+	
+<div class="three-cards">
+  <div class="char-card">
+    <img src="../../../Downloads/the-cart-titan-is-about-to-shoot-you-whats-your-next-move-v0-5sihq38krgqe1.webp" alt="Cart Titan">
+    <h4>Cart Titan</h4>
+    <p>The Cart Titan is one of the Nine Titans from Attack on Titan with remarkable endurance and speed, capable of remaining in its Titan form for months and transforming hundreds of times consecutively. It is unique for its quadrupedal, horse-like form and has a long, flat torso ideal for carrying cargo and weaponry. Its primary weaknesses are its relatively low defensive capabilities and slower regeneration compared to other Titans. </p>
+  </div>
+
+  <div class="char-card">
+    <img src="../../../Downloads/who-was-the-best-jaw-titan-and-who-was-the-worst-v0-dm5d9v46z5be1.png" alt="Jaw Titan">
+    <h4>Jaw Titan</h4>
+    <p>The Jaw Titan is one of the Nine Titans in Attack on Titan, known for its small size, exceptional speed, and powerful jaws and claws that can crush almost anything. Its abilities make it a potent assault unit. Previous inheritors include Marcel Galliard, Ymir, and Porco Galliard, while the most recent, Falco Grice, developed unique bird-like characteristics including wings, making his version the first and only flying Jaw Titan. </p>
+  </div>
+
+  <div class="char-card">
+    <img src="../../../Downloads/War-Hammer-Titan-Attack-on-Titan-header.avif" alt="Warhammer Titan">
+    <h4>Warhammer Titan</h4>
+    <p>The Warhammer Titan from Attack on Titan can create weapons and structures out of hardened Titan flesh, including its namesake warhammer, spikes, and flexible weapons like crossbows. Its user is encased in a crystal and can remotely control the Titan via a string of flesh, which makes the user invulnerable to capture as long as the crystal is intact and the string isn't severed. This unique control method makes the user's location irrelevant to the Titan's transformation location, but overusing the hardening ability can drain the user's stamina.  </p>
+  </div>
+</div>
+
+	<div class="single-box">
+  <div class="single-image">
+    <img src="../../../Downloads/011bed172adab7c138193e7842cfd702.jpg" alt="Founding Titan">
+  </div>
+
+  <div class="single-text">
+    <h2>Founding Titan</h2>
+    <p>
+      The Founding Titan is one of the Nine Titans in Attack on Titan with the power to create and control Titans and modify the memories and biology of Eldians. It was the first Titan, created from Ymir Fritz, and has the ability to unleash the full power of the Walls and the Rumbling. While a royal family member is needed to unlock its full potential, anyone who touches a royal-blooded individual can use its powers. 
+    </p>
+  </div>
+</div>
+
+	<h2 class="table-title">Titan Comparison Table</h2>
+
+<table class="titan-table">
+  <tr>
+    <th>Titan</th>
+    <th>Power</th>
+    <th>Special Ability</th>
+    <th>Speed</th>
+  </tr>
+  <tr>
+    <td>Founding Titan</td>
+    <td>10/10</td>
+    <td> controlling other Titans, creating new Titans from Subjects of Ymir, and altering the memories and bodies of Eldians.</td>
+    <td>5/10</td>
+  </tr>
+  <tr>
+    <td>Colossal Titan</td>
+    <td>9/10</td>
+    <td> its immense size and its ability to control the explosive energy and devastating steam it emits</td>
+    <td>5/10</td>
+  </tr>
+	 <tr>
+    <td>Attack Titan</td>
+    <td>9/10</td>
+    <td>its capacity to see the memories of past and future inheritors</td>
+    <td>9/10</td>
+  </tr>
+  <tr>
+    <td>Beast Titan</td>
+    <td>8.5/10</td>
+    <td>The Beast Titan can throw a variety of objects, from rocks to naval cannons, with immense force and precision.</td>
+    <td>6/10</td>
+  </tr>
+	  <tr>
+    <td>Armored Titan</td>
+    <td>8/10</td>
+    <td>hardened, armor-like skin, which provides immense durability against most attacks. </td>
+    <td>6.5/10</td>
+  </tr>
+  <tr>
+    <td>Female Titan</td>
+    <td>8/10</td>
+    <td>selective hardening of its skin to enhance its physical attacks or create a crystalline prison, and a scream that can attract nearby Pure Titans to its location</td>
+    <td>8.5/10</td>
+  </tr>
+	 <tr>
+    <td>WarHammer Titan</td>
+    <td>9/10</td>
+    <td>produce and manipulate hardened titan flesh to create structures and weaponry</td>
+    <td>8/10</td>
+  </tr>
+  <tr>
+    <td>Jaw Titan</td>
+    <td>7.5/10</td>
+    <td>exceptional speed and agility and its incredibly powerful jaws and claws, which are capable of crushing hardened objects that other Titans canno</td>
+    <td>10/10</td>
+	</tr>
+	  <tr>
+    <td>Cart Titan</td>
+    <td>7/10</td>
+    <td>exceptional endurance, allowing it to stay in Titan form for long periods and transform rapidly, and its quadrupedal speed, which makes it fast and capable of surprising enemies</td>
+    <td>7/10</td>
+	</tr>
+
+</table>
+
+
+<div class="footer">
+
+  <div class="links">
+    <a href="#">IMDB</a>
+    <a href="#"></a>
+    <a href="https://www.imdb.com/">IMDB</a>
+    <a href="https://www.rottentomatoes.com/">ROTTEN TOMATOES</a>
+    <a href="https://www.netflix.com/title/70299043">NETFLIX</a>
+    <a href="https://en.wikipedia.org/wiki/Attack_on_Titan">WIKIPEDIA</a>
+  
+  </div>
+
+  
+  <div class="apps">
+    <a href=" "><img src="../../../Downloads/Download_on_the_App_Store_Badge.svg.png" alt="App Store"></a>
+    <a href="#"><img src="../../../Downloads/badge-google-play-and-app-store-button-download-free-png.webp" alt="Play Store"></a>
+  </div>
+</div>
+
+	
+	
+	
+	
+	
+	
+</body>
+</html>
